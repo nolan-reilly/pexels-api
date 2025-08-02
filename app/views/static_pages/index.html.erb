@@ -1,0 +1,9 @@
+<h1>StaticPages#index</h1>
+<p>Find me in app/views/static_pages/index.html.erb</p>
+
+<%= form_with url: root_path, method: :get do |form| %>
+    <%= form.label :picture_id, "Picture ID" %>
+    <%= form.text_field :picture_id %>
+
+    <%= form.submit %>
+<% end %>
